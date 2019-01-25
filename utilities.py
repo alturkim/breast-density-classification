@@ -33,13 +33,14 @@ class LocalBinaryPatterns:
         return hist
 
 
-def split(X, y, training_txt_file_path, testing_txt_file_path, test_size=0.3, random_state=42):
+def split(X, y, test_size=0.3, random_state=42):
     train_set, test_set = train_test_split(X, test_size=test_size, random_state=random_state, stratify=y)
-
-    with open (training_txt_file_path, "w") as f:
+    training_txt_file_path = "../txt_files/training_set.txt"
+    testing_txt_file_path = "../txt_files/testing_set.txt"
+    with open(training_txt_file_path, "w") as f:
         for i in range(0, len(train_set)):
             f.write(str(train_set[i]) + '\n')
-    with open (testing_txt_file_path, "w") as f:
+    with open(testing_txt_file_path, "w") as f:
         for i in range(0, len(test_set)):
             f.write(str(train_set[i]) + '\n')
 
