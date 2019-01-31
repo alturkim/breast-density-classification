@@ -1,10 +1,13 @@
 from sklearn.svm import SVC
-from features_extraction import get_lbp
+import pandas as pd
 
+# read the data from the csv file
+df = pd.read_csv("..\\features.csv", header=None)
+X = df.values[:, 0:-1]
+y = df.values[:, -1]
 
-features, labels = get_lbp()
 print("start training")
-model = SVC(C=100.0, random_state=42, max_iter=10000, kernel="rbf")
-model.fit(features, labels)
+model = SVC(C=10000.0, gamma=1000, random_state=42, kernel="rbf")
+model.fit(X, y)
 print("Done")
-print(model.score(features, labels))
+print(model.score(X, y))
