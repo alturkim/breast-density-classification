@@ -23,8 +23,7 @@ Giving the feature extracted from the method above, multiple classifiers are tra
 
 
 ## Feature Extraction
-Extracted features are stored in a csv file in the following Google drive [link](https://drive.google.com/drive/folders/1miW0Bb9qx7N8ygIfOh92Ju3qNYAwymQq?usp=sharing).
-You can either download them or you can extract the features by running the following command: <br/>
+You can extract the features by running the following command: <br/>
 `python features_extraction.py -t "path to the image files"`   
  
 ## Summary of the data
