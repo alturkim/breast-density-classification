@@ -1,3 +1,4 @@
+# Credit: Some parts of this code are due to https://www.pyimagesearch.com/2015/12/07/local-binary-patterns-with-python-opencv/
 import utilities as utils
 import csv
 import numpy as np
