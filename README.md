@@ -32,8 +32,3 @@ LBP feature vector length: 26 <br/>
 Rotational LBP feature vector length: 26 <br/>
 HOG feature vector length: 8100 <br/>
 Number of total features: 8152  <br/>
-
-## Training
-An initial SVM classifier is trained on all data.
-Training Accuracy: 0.9384670744872257
-        
